@@ -1,4 +1,4 @@
-package com.project.microservices.product.config;
+package com.project.microservice.inventory.config;
 
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -11,15 +11,15 @@ import org.springframework.context.annotation.Configuration;
 public class OpenAPIConfig {
 
     @Bean
-    public OpenAPI productServiceAPI() {
+    public OpenAPI inventoryServiceAPI() {
         return new OpenAPI()
-                .info(new Info().title("Product Service API")
-                        .description("This is the rest API for product service")
+                .info(new Info().title("Inventory Service API")
+                        .description("This is the rest API for Inventory service")
                         .version("0.0.1")
                         .license(new License().name("Apache 2.0"))
                 ).externalDocs(new ExternalDocumentation()
-                        .description("you can refer to product service doc")
-                        .url("http://product-dummy-url.com/docs")
+                        .description("you can refer to Inventory service doc")
+                        .url("http://inventory-dummy-url.com/docs")
                 );
     }
 
