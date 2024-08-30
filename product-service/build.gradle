@@ -27,6 +27,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'io.rest-assured:rest-assured:5.3.2'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'  // for swagger ui API documentation
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-api:2.6.0'  // to access API documentation in json/yaml format
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
