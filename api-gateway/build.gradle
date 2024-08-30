@@ -24,6 +24,8 @@ ext {
 dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-gateway-mvc'
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-authorization-server'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'  // for swagger ui API documentation
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-api:2.6.0'  // to access API documentation in json/yaml format
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
